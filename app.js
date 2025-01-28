@@ -1,5 +1,4 @@
 let lista = document.getElementById("resultado");
-
 let amigos = [];
 
 function agregarAmigo(){
