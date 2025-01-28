@@ -9,12 +9,11 @@ function agregarAmigo(){
     } else if (amigos.includes(nombre.value)){
         alert("Este nombre ya existe en la lista.")
     } else{
-    let li = document.createElement('li');
-    let liText = document.createTextNode(nombre.value);
-    li.appendChild(liText);
-    lista.appendChild(li);
-    amigos.push(nombre.value);
-        
- }
- nombre.value = ""; 
+        let li = document.createElement('li');
+        let liText = document.createTextNode(nombre.value);
+        li.appendChild(liText);
+        lista.appendChild(li);
+        amigos.push(nombre.value);
+    }
+nombre.value = ""; 
 }
