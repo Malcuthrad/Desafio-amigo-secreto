@@ -20,8 +20,7 @@ nombre.value = ""; // deja vacio la caja de texto para el sgte nombre a ingresar
 function sortearAmigo(){
     if (amigos.length > 0){  // verifica que el arreglo tenga elementos a sortear.
     let winner = amigos[Math.floor(Math.random() * amigos.length)];// si hay nombres entonces sortea 1 al azar.
-    //alert(`El amigo secreto es ${winner}`);  // se puede dar el nombre elegido por alerta
-    lista.innerHTML = `El amigo secreto es ${winner}`; // o mostrarlo en el cuadro donde se ven los nombres ingresado.
+    lista.innerHTML = `El amigo secreto es ${winner}`; // muestra en pantalla el nombre ganador.
     amigos = []; // al sortear un nombre el arreglo queda vacio.
     } else{
         alert("No hay nombres en la lista para sortear.")  // si no hay nombres ingresado no se hace el sorteo.
